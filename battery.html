@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <link rel="stylesheet" href="./public/css/battery.css"> 
+</head>
+<body>
+    <nav class= "navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Dockville</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="form.html">Parking lot</a>
+              <a class="nav-link" href="battery.html">Battery</a>
+              <a class="nav-link" href="tires.html">Tire Clinic</a>
+            </div>
+          </div>
+        </div>
+  </nav>
+    <div class="container">
+        <h3>client form</h3>
+        <!-- onsubmit is an event listner  -->
+            <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
+              <div class="form-g">
+                <label for="fname">First name:</label>
+                <input type="text" name="fname" id="fname"></input>
+                 <span id="fname-error"></span>
+      
+                 <label for="lname" >Last name:</label>
+                <input type="text" name="lname" id="lname"></input>
+                <span id="lname-error"></span>
+      
+      
+                <label for="nin" >NIN:</label>
+                <input type="text" name="nin" id="nin"></input>
+                <span id="nin-error"></span>
+      
+                <label for="contact" >Contact:</label>
+                <input type="tel" name="contact"  id="contact" ></input>
+                <span id="contact-error"></span>
+
+                <label for="battery" >Battery size:</label>
+                <input type="tel" name="battery"  id="battery" ></input>
+                <span id="battery-error"></span> 
+      
+                <!-- <label for="carmodel">Car model:</label>
+                <input type="text" name="carmodel" id="carmodel"></input>
+                <span id="model-error"></span>
+      
+                <label for="nplate">Number plate:</label>
+                <input type="text" name="nplate" id="nplate"></input>
+       -->
+                <!-- <label for="period" >Period:</label>
+                <select id="period" name="period">
+                  <option value=""disabled selected></option>
+                  <option value="Day">Day</option>
+                  <option value="night">Night</option>
+                  <option value="less">Not more than 3 hours</option>
+                </select> -->
+      
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date"></input>
+      
+                <label for="time">Time of arrival :</label>
+                <input type="time" name="time" id="time"></input>
+      
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <script src="form2.js"></script> 
+</body>
+</html>

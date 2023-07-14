@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+.home-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-container.card-h-100{
+    width: 20px;
+    height: 15px;
+}
+ 
+body{
+    background-image: url("/public/images/carparkx.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+
+}
