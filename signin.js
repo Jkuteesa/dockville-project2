@@ -14,3 +14,8 @@ signUpBtn.addEventListener("click", () => {
 
 fistForm.addEventListener("submit", (e) => e.preventDefault());
 secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+const logInRedirect = document.getElementById("btnSignin")
+logInRedirect.addEventListener("click", () => {
+	window.location.href = "./home.html";
+});

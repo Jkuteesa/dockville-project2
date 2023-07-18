@@ -1,32 +1,38 @@
 
 /* this is css to new form */
 body{
-    background-color: aqua;
+    background-image: ("/public/images/bkground.PNG");
     justify-content: center;
     background-size: cover;
     background-position: center;
+    padding: 0px;
+    margin: 0px;
 }
-.container{
-    background-color: rgb(229, 239, 239);
-    padding: 20px;
+.container-fluid{
+    background-image: url("/public/images/bkground.PNG");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    padding: 0px 0px;
     }
-    .container form{
+    .container-fluid form{
     margin: 5% 25%;
     padding: 50px;
-    background-color: pink;
+    background-color: rgb(216, 161, 229);
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow: hidden;
     /*width: 40%;*/
     }
-    .container form label{
+    .container-fluid form label{
     color: #395870;
     display: block;
     font-weight: bold;
     margin-top: 20px;
     }
-    .container form input, select{
+    .container-fluid form input, select{
     width: 80%;
     background: #fff;
     border: 1px solid #c6c7cc;
@@ -36,3 +42,7 @@ body{
     margin-bottom: 10px;
     display: block;
     } 
+
+    #navbar{
+        background-color: white;
+    }

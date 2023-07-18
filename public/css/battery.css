@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(229, 239, 239) ;
     justify-content: center;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ body{
     .container form{
     margin: 5% 25%;
     padding: 50px;
-    background-color: pink;
+    background-color: #A0D8B3;
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;

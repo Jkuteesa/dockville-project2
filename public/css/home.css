@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    font-style: white;
 
 }
 .home-container{
@@ -17,7 +18,7 @@
 }
  
 body{
-    background-image: url("/public/images/carparkx.jpg");
+    background-image: url("/public/images/homepage.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no repeat;

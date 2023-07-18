@@ -24,10 +24,11 @@
         </div>
   </nav>
     <div class="container">
-        <h3>client form</h3>
+        
         <!-- onsubmit is an event listner  -->
             <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
               <div class="form-g">
+                <h2>client form</h2>
                 <label for="fname">First name:</label>
                 <input type="text" name="fname" id="fname"></input>
                  <span id="fname-error"></span>
@@ -46,34 +47,22 @@
                 <span id="contact-error"></span>
 
                 <label for="battery" >Battery size:</label>
-                <input type="tel" name="battery"  id="battery" ></input>
+                <input type="text" name="battery"  id="battery" ></input>
                 <span id="battery-error"></span> 
       
-                <!-- <label for="carmodel">Car model:</label>
-                <input type="text" name="carmodel" id="carmodel"></input>
-                <span id="model-error"></span>
-      
-                <label for="nplate">Number plate:</label>
-                <input type="text" name="nplate" id="nplate"></input>
-       -->
-                <!-- <label for="period" >Period:</label>
-                <select id="period" name="period">
-                  <option value=""disabled selected></option>
-                  <option value="Day">Day</option>
-                  <option value="night">Night</option>
-                  <option value="less">Not more than 3 hours</option>
-                </select> -->
-      
+                
                 <label for="date">Date:</label>
                 <input type="date" name="date" id="date"></input>
+                <span id="date-error"></span>
       
                 <label for="time">Time of arrival :</label>
                 <input type="time" name="time" id="time"></input>
+                <span id="time-error"></span>
       
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
-          <script src="form2.js"></script> 
+          <script src="battery.js"></script> 
 </body>
 </html>

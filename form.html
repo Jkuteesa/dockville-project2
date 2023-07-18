@@ -11,16 +11,31 @@
     />
     <link rel="stylesheet" href="./public/css/form.css"/>
 
-<title>registration form</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="css/custom_style.css">  -->
+  <title>registration form</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
- <div class="container">
-  <h3>client form</h3>
+  <nav class= "navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" id="navbar">
+      <a class="navbar-brand" href="home.html">Dockville</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="form.html">Parking lot</a>
+          <a class="nav-link" href="battery.html">Battery</a>
+          <a class="nav-link" href="tires.html">Tire Clinic</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+ <div class="container-fluid">
+ 
   <!-- onsubmit is an event listner  -->
       <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
         <div class="form-g">
+          <h2>client form</h2>
           <label for="fname">First name:</label>
           <input type="text" name="fname" id="fname"></input>
            <span id="fname-error"></span>
@@ -40,13 +55,16 @@
 
           <label for="carmodel">Car model:</label>
           <input type="text" name="carmodel" id="carmodel"></input>
-          <span id="model-error"></span>
+          <span id="carmodel-error"></span>
 
           <label for="nplate">Number plate:</label>
           <input type="text" name="nplate" id="nplate"></input>
+          <span id="nplate-error"></span>
 
           <label for="period" >Period:</label>
-          <select id="period" name="period">
+          <select id="period" name="period" id="period">
+            <span id="period-error"></span>
+
             <option value=""disabled selected></option>
             <option value="Day">Day</option>
             <option value="night">Night</option>
@@ -55,12 +73,14 @@
 
           <label for="date">Date:</label>
           <input type="date" name="date" id="date"></input>
+          <span id="date-error"></span>
 
-          <label for="time">Time of arrival :</label>
-          <input type="time" name="time" id="time"></input>
+          <label for="timein">Time of arrival :</label>
+          <input type="timein" name="timein" id="timein"></input>
+          <span id="timein-error"></span>
 
-          <label for="time">Time of arrival :</label>
-          <input type="time" name="time" id="time"></input>
+          <label for="timeout">Time of departure :</label>
+          <input type="timeout" name="timeout" id="timeout"></input>
 
 
           <button type="submit" class="btn btn-primary">Submit</button>

@@ -7,7 +7,7 @@
   --red: #e31b23;
   /* --bodyColor: #292a2b; */
   --borderFormEls: white;
-  --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormEls: hsl(, 0%, 14%);
   --bgFormElsFocus:white;
 } 
 
@@ -282,6 +282,7 @@ footer span {
     display: block;
   }
 } 
+
 
 /* @media screen and (min-width: 541px) {
   .my-form input[type="checkbox"] + label::before {

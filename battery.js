@@ -1,32 +1,22 @@
-// const checkbox = document.querySelector('.my-form input[type="checkbox"]');
-// const btns = document.querySelectorAll(".my-form button");
-
-// checkbox.addEventListener("change", function() {
-//   const checked = this.checked;
-//   for (const btn of btns) {
-//     checked ? (btn.disabled = false) : (btn.disabled = true);
-//   }
-// });
-
 const Validate=(event )=>{
     let error = 0;
-    let firstName = document.form.fname
-    let lastName = document.form.lname
-    let email = document.form.email
-    let contact = document.form.contact
-    let carmodel = document.form.carmodel
-    let tiremake = document.form.tiremake
-    let tiresize = document.form.tiresize
+    let firstName = document.registration.fname
+    let lastName = document.registration.lname
+    let nin = document.registration.nin
+    let contact = document.registration.contact
+    let battery = document.registration.battery
+    let date = document.registration.date
+    let time = document.registration.time
    
 
     //finding errors in empty fields
     let fnameError = document.getElementById("fname-error")
     let lnameError = document.getElementById("lname-error")
-    let emailError = document.getElementById("email-error")
     let contactError = document.getElementById("contact-error")
-    let carmodelError = document.getElementById("carmodel-error")
-    let tiremakeError = document.getElementById("tiremake-error")
-    let tiresizeError = document.getElementById("tiresize-error")
+    let ninError = document.getElementById("nin-error")
+    let batteryError = document.getElementById("battery-error")
+    let dateError = document.getElementById("date-error")
+    let timeError = document.getElementById("time-error")
     
     
 
@@ -112,16 +102,21 @@ const Validate=(event )=>{
         contact.focus();
     }
 
-    if(email.value == ""){
-        email.style.border = "2px solid red";
-        emailError.textContent = "Please enter email";
-        emailError.style = "color:red; font-family:serif ";
-        email.focus();
+    if(nin.value == ""){
+        nin.style.border = "2px solid red";
+        ninError.textContent = "Please enter NIN";
+        ninError.style = "color:red; font-family:serif ";
+        nin.focus();
         error++;
-    }
-    else{
-        email.style.border = "2px solid green";
-        emailError.textContent = "";
+    }else if(!nin.value.match(ninRegex)){
+        nin.style.border = "2px solid red";
+        ninError.textContent = "Nin should have atleast 14 characters.";
+        ninError.style = "color:red; font-family:serif ";
+        contact.focus();
+        error++;
+    }else{
+        nin.style.border = "2px solid green";
+        ninError.textContent = "";
         contact.focus();
     }
 
@@ -141,40 +136,30 @@ const Validate=(event )=>{
     else{
             contact.style.border = "2px solid green";
             contactError.textContent = "";
-            carmodel.focus();
+            battery.focus();
         } 
       
-    if(carmodel.value == ""){
-        carmodel.style.border = "2px solid red";
-        carmodelError.textContent = "Please enter carmodel size";
-        carmodelError.style = "color:red; font-family:serif ";
-        carmodelError.focus();
+    if(battery.value == ""){
+        battery.style.border = "2px solid red";
+        batteryError.textContent = "Please enter battery size";
+        batteryError.style = "color:red; font-family:serif ";
+        batteryError.focus();
           error++;
     }
-    else{
-            carmodel.style.border = "2px solid green";
-            carmodelError.textContent = "";
-            tiremake.focus();
-        }
 
-    if(tiremake.value == ""){
-        tiremake.style.border = "2px solid red";
-        tiremakeError.textContent = "Please enter tire make";
-        tiremakeError.style = "color:red; font-family:serif ";
-        tiremake.focus();
+    if(date.value == ""){
+        date.style.border = "2px solid red";
+        dateError.textContent = "Please enter date";
+        dateError.style = "color:red; font-family:serif ";
+        date.focus();
           error++;
     }
-    else{
-                tiremake.style.border = "2px solid green";
-                tiremakeError.textContent = "";
-                tiresize.focus();
-            }
 
-    if(tiresize.value == ""){
-        tiresize.style.border = "2px solid red";
-        tiresizeError.textContent = "Please enter tire size";
-        tiresizeError.style = "color:red; font-family:serif ";
-        tiresize.focus();
+    if(time.value == ""){
+        time.style.border = "2px solid red";
+        timeError.textContent = "Please enter time";
+        timeError.style = "color:red; font-family:serif ";
+        time.focus();
           error++;
     }
 
@@ -185,7 +170,13 @@ const Validate=(event )=>{
     //     model.focus();
     //       error++;
     //  }
-    
+    if(nin.value == ""){
+        nin.style.border = "2px solid red";
+        ninError.textContent = "Please enter NIN";
+        ninError.style = "color:red; font-family:serif ";
+        nin.focus();
+          error++;
+    }
     
 
     //   // generating unique numbers
