@@ -1,25 +1,29 @@
 
 /* this is css to new form */
 body{
-    background-image: ("/public/images/bkground.PNG");
+    background-color: #022140;
     justify-content: center;
     background-size: cover;
     background-position: center;
     padding: 0px;
     margin: 0px;
 }
-.container-fluid{
+/* .container-fluid{
     background-image: url("/public/images/bkground.PNG");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no repeat;
     background-size: cover;
     padding: 0px 0px;
+    } */
+    .container-fluid{
+        background-color: #e5efef;
     }
+
     .container-fluid form{
     margin: 5% 25%;
     padding: 50px;
-    background-color: rgb(216, 161, 229);
+    background-color: #A0D8B3;
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;

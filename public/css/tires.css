@@ -67,14 +67,17 @@ body {
   margin: 1.5rem 0;
 }
 
-body{
+  body{
   background-image: url("/public/images/tiresx.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no repeat;
   background-size: cover;
   
-}
+}  
+ /* body{
+  background-color: rgb(229, 239, 239);
+}  */
 
 .container {
   max-width: 800px;
@@ -153,6 +156,24 @@ body{
   filter: blur(2px);
 }
 
+.my-form{
+  /* Add any other styles you need */
+.form-container {
+  border: 2px solid #bc1b1b; /* Border style, width, and color */
+  padding: 20px; /* Optional: Add padding to create space between the border and form content */
+  width: 300px; /* Optional: Set a width for your form container */
+  margin: 0 auto; /* Optional: Center the form horizontally on the page */
+}
+
+}
+.form1{
+  background-color: #e31b23;
+  width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+
+
+}
 
 /* FORM BTNS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

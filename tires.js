@@ -112,19 +112,7 @@ const Validate=(event )=>{
         contact.focus();
     }
 
-    if(email.value == ""){
-        email.style.border = "2px solid red";
-        emailError.textContent = "Please enter email";
-        emailError.style = "color:red; font-family:serif ";
-        email.focus();
-        error++;
-    }
-    else{
-        email.style.border = "2px solid green";
-        emailError.textContent = "";
-        contact.focus();
-    }
-
+    
     if(contact.value == ""){
         contact.style.border = "2px solid red";
         contactError.textContent = "Please enter contact number";
