@@ -3,8 +3,8 @@
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
  :root {
-  --white: #afafaf;
-  --red: #e31b23;
+  --white: black;
+  --red: white;
   /* --bodyColor: #292a2b; */
   --borderFormEls: white;
   --bgFormEls: hsl(, 0%, 14%);
@@ -167,7 +167,7 @@ body {
 
 }
 .form1{
-  background-color: #e31b23;
+  background-color:#A0D8B3;
   width: 700px;
   margin: 50px auto;
   padding: 20px;

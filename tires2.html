@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/tires2.css" />
+    <title>tires</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Tire Clinic</div>
+      <form class="my-form" id="form" method="POST" name="form" onsubmit="return Validate(event)"; >
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details"> <label for="fname"> First Name</label></span>
+            <input
+            type="text"
+         name="fname" id="fname"/>
+          <span id="fname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"><label for="lname">Last Name</label></span>
+            <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                  />
+                  <span id="lname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details">  <label for="contact"> Phone Contact</label></span>
+            <input
+                    type="tel"
+                    placeholder="Phone contact"
+                    name="contact"
+                    id="contact"
+                  />
+                  <span id="contact-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="carmodel">Car Model</label></span>
+            <input
+            type="text"
+            name="carmodel"
+            id="carmodel"
+          />
+          <span id="carmodel-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="tiremake"></label> Tire Make</span>
+            <input
+            type="text"
+            name="tiremake"
+            id="tiremake"
+          />
+          <span id="tiremake-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="tiresize"> Tire Size</label></span>
+            <input
+            type="text"
+            name="tiresize"
+            id="tiresize"
+          />
+          <span id="tiresize-error"></span>
+          </div>
+        </div>
+        <div class="gender__details">
+          <span class="gender__title">Tire services</span>
+          <div class="category">
+            <label for="checkbox-1">
+               <span class="checkbox"></span>
+               <span>Tire pressure</span>
+               <input type="checkbox" id="checkbox-1" name="gender" value="tire-pressure">
+            </label>
+            <label for="checkbox-2">
+                <span class="checkbox"></span>
+                <span>Valve fixing</span>
+                <input type="checkbox" id="checkbox-2" name="gender" value="valve-fixing">
+             </label>
+             <label for="checkbox-3">
+                <span class="checkbox"></span>
+                <span>Puncture fixing</span>
+                <input type="checkbox" id="checkbox-3" name="gender" value="puncture-fixing">
+             </label>
+ 
+ 
+
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+    <script src="./public/js/tires.js"></script>
+  </body>
+</html>

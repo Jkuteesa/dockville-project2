@@ -1,17 +1,17 @@
 body{
-    background-color: rgb(229, 239, 239) ;
+    background-color: #191825 ;
     justify-content: center;
     background-size: cover;
     background-position: center;
 }
 .container{
-    background-color: rgb(229, 239, 239);
+    background-color: #191825;
     padding: 20px;
     }
     .container form{
     margin: 5% 25%;
     padding: 50px;
-    background-color: #A0D8B3;
+    background-color: #435B66;
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,7 +19,7 @@ body{
     /*width: 40%;*/
     }
     .container form label{
-    color: #395870;
+    color: #e9eced;
     display: block;
     font-weight: bold;
     margin-top: 20px;

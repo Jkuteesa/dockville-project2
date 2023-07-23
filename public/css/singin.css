@@ -20,7 +20,7 @@
 body {
 	align-items: center;
 	background-color: var(--white);
-	background: url("/public/images/carparkx.jpg");
+	background: url("/public/images/tour.PNG");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -103,7 +103,7 @@ body {
 
 .overlay {
 	background-color: var(--lightblue);
-	background: url("/public/images/carparkx.jpg");
+	background: url("/public/images/tour");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;

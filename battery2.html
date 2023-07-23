@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/park.css" />
+    <title>battery </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Battery form</div>
+      <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details"> <label for="fname"> First Name</label></span>
+            <input type="text" name="fname" id="fname"></input>
+            <span id="fname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="lname"> Last Name</label></span>
+            <input type="text" name="lname" id="lname"></input>
+            <span id="lname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="nin"> NIN</label></span>
+            <input type="text" name="nin" id="nin"></input>
+            <span id="nin-error"></span>
+  
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="contact"> Phone contact</label></span>
+            <input type="tel" name="contact"  id="contact" ></input>
+            <span id="contact-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="battery">Battery size</label></span>
+            <input type="text" name="battery"  id="battery" ></input>
+            <span id="battery-error"></span> 
+          </div>
+          <div class="input__box">
+            <span class="details"><label for="date"></label>Date</span>
+            <input type="date" name="date" id="date"></input>
+            <span id="date-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="time"> Time of arrival</label></span>
+            <input type="time" name="time" id="time"></input>
+            <span id="time-error"></span>
+  
+          </div>
+        </div>
+       
+        
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+     <script src="./public/js/battery.js"></script> 
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./public/css/park.css" />
+    <title>parking form</title>
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      <div class="title">Parking form</div>
+      <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
+        <div class="user__details">
+          <div class="input__box">
+            <span class="details"> <label for="fname">First Name</label></span>
+            <input type="text" name="fname" id="fname"></input>
+            <span id="fname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="lname"> Last Name </label></span>
+            <input type="text" name="lname" id="lname" ></input>
+            <span id="lname-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="nin">NIN</label></span>
+            <input type="text" name="nin" id="nin"></input>
+            <span id="nin-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"><label for="contact">Phone contact</label></span>
+            <input type="tel" name="contact" id="contact"></input>
+              <span id="contact-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="carmodel">Car model</label></span>
+            <input type="text" name="carmodel" id="carmodel"></input>
+            <span id="carmodel-error"></span>
+
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="nplate">Number plate</label></span>
+            <input type="text" name="nplate" id="nplate"></input>
+            <span id="nplate-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"><label for="period">Period</label></span>
+            <select id="period" name="period">
+            <span id="period-error"></span>
+            <option value=""disabled selected></option>
+            <option value="Day">Day</option>
+            <option value="night">Night</option>
+            <option value="less">Not more than 3 hours</option>
+          </select>
+
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="date"> Date</label></span>
+            <input type="date" name="date" id="date"></input>
+          <span id="date-error"></span>
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="timein">Time of arrival</label> </span>
+            <input type="timein" name="timein" id="timein"></input>
+            <span id="timein-error"></span>
+  
+          </div>
+          <div class="input__box">
+            <span class="details"> <label for="timeout"> Time of departure</label></span>
+            <input type="timeout" name="timeout" id="timeout"></input>
+          </div>
+        </div>
+
+        
+       
+        
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+    <script src="./public/js/form2.js"></script>
+  </body>
+</html>
