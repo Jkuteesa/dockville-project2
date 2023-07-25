@@ -27,7 +27,7 @@
 
 } */
 .logo{
-    background-image:url("/public/images/logo.PNG");
+    background-image:url("/public/images/dockville.png");
     width: 500px;
     height: 100rem;
     background-repeat: no-repeat;
@@ -36,5 +36,11 @@
     margin: 100px auto;
 }
 body{
-    background-color: #e5efef;
+    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
 }
+:root {
+    --main-blue: #71b7e6;
+    --main-purple: #9b59b6;
+    --main-grey: #ccc;
+    --sub-grey: #d9d9d9;
+  }

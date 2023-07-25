@@ -73,3 +73,11 @@
     font-weight: bold;
 }
 
+/* new changes */
+.navbar{
+  padding: 10px 0;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}

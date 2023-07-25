@@ -3,13 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/nav2.css">
     
     <link rel="stylesheet" href="./public/css/park.css" />
     <title>parking form</title>
   </head>
   
   <body>
-    
+    <div class="navbar">
+     <div class="navcontainer">
+      <header>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="home.html">Dockville</a>
+            </li>
+            <li>
+              <a href="park.html">Parking </a>
+            </li>
+            <li>
+              <a href="battery2.html">Battery</a>
+            </li>
+            <li>
+              <a href="tires2.html">Tires</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </header>
+    </div> 
     <div class="container">
       <div class="title">Parking form</div>
       <form id="formid" name="registration" action="#" onsubmit="return Validate(event)" method="POST">
@@ -35,7 +57,7 @@
               <span id="contact-error"></span>
           </div>
           <div class="input__box">
-            <span class="details"> <label for="carmodel">Car model</label></span>
+            <span class="details"> <label for="carmodel">vehicle model</label></span>
             <input type="text" name="carmodel" id="carmodel"></input>
             <span id="carmodel-error"></span>
 
@@ -48,13 +70,13 @@
           <div class="input__box">
             <span class="details"><label for="period">Period</label></span>
             <select id="period" name="period">
-            <span id="period-error"></span>
+           
             <option value=""disabled selected></option>
             <option value="Day">Day</option>
             <option value="night">Night</option>
             <option value="less">Not more than 3 hours</option>
           </select>
-
+          <span id="period-error"></span>
           </div>
           <div class="input__box">
             <span class="details"> <label for="date"> Date</label></span>
@@ -63,13 +85,13 @@
           </div>
           <div class="input__box">
             <span class="details"> <label for="timein">Time of arrival</label> </span>
-            <input type="timein" name="timein" id="timein"></input>
+            <input type="time" name="timein" id="timein"></input>
             <span id="timein-error"></span>
   
           </div>
           <div class="input__box">
             <span class="details"> <label for="timeout"> Time of departure</label></span>
-            <input type="timeout" name="timeout" id="timeout"></input>
+            <input type="time" name="timeout" id="timeout"></input>
           </div>
         </div>
 
