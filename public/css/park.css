@@ -102,6 +102,14 @@ form .gender__details .category {
   align-items: center;
 }
 
+#period{
+padding: 10px 50px;
+border-radius: 5px;
+border-color: var(--main-purple);
+border-bottom:2px solid var(--main-purple) ;
+
+}
+
 
 .gender__details .category .checkbox ::before {
   content: "";
