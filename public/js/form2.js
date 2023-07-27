@@ -47,6 +47,8 @@ const Validate=(event )=>{
     // this is regex for number plate
     let nplateRegex = /^U.*/
     let nplateRegex1 = /^[A-Za-z0-9]{1,7}$/
+    let nplateRegex2 = /^[A-Z]{1,7}$/
+
 
 
 
@@ -181,7 +183,7 @@ const Validate=(event )=>{
         nplateError.style = "color:red; font-family:serif ";
         nplate.focus();
         error++
-    }else if(!nplate.value.match(nplateRegex1)){
+    }else if(!!nplate.value.match(nplateRegex2)){
         nplate.style.border = "2px solid red";
         nplateError.textContent = "Number plate should not have more than 7 characters.";
         nplateError.style = "color:red; font-family:serif ";

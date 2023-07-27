@@ -22,6 +22,10 @@ header{
   margin-top: 50px auto;
     
 }
+.user-image img{
+  width: 45px;
+  margin-right: 100px;
+}
 
  /* .navcontainer{
     display: flex;
@@ -32,14 +36,14 @@ header{
 }  */
 
 .navcontainer li{
-    margin: 0 25px;
+    margin:  25px;
 }
 
 .navcontainer li a{
     font-size: 22px;
     text-decoration: none;
     transition: 0.3s;
-    color: black;
+    color:red;
     
 }
 
@@ -78,4 +82,11 @@ header{
 .container{
   max-width: 1200px;
   margin: 0 auto;
+}
+.links{
+  justify-content: end;
+}
+h2{
+  color: purple;
+ margin-left: 50px;
 }
