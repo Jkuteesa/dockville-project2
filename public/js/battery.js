@@ -102,23 +102,29 @@ const Validate=(event )=>{
         contact.focus();
     }
 
+    // Validating for NIN
+    // regex for nin
+    const ninRegex2 = /^CM([a-zA-Z0-9]{12})+$/
+
+
     if(nin.value == ""){
-        nin.style.border = "2px solid red";
-        ninError.textContent = "Please enter NIN";
-        ninError.style = "color:red; font-family:serif ";
-        nin.focus();
-        error++;
-    }else if(!nin.value.match(ninRegex)){
-        nin.style.border = "2px solid red";
-        ninError.textContent = "Nin should have atleast 14 characters.";
-        ninError.style = "color:red; font-family:serif ";
-        contact.focus();
-        error++;
-    }else{
-        nin.style.border = "2px solid green";
-        ninError.textContent = "";
-        contact.focus();
+    nin.style.border = "2px solid red";
+    ninError.textContent = "Please enter NIN.";
+    ninError.style = "color: red; font-size:11px; font-family:helvetica,Arial,sans-serif;";
+    nin.focus();
+    error++;
+    }else if(!(ninRegex.test(nin.value)|| ninRegex2.test(nin.value))){
+    nin.style.border = "2px solid red";
+    ninError.textContent = "NIN should look like CFXXXXXXX or CMXXXXXXX";
+    ninError.style = "color:red; font-family:serif;";
+    nin.focus();
+    error++;
     }
+    else{
+    nin.style.border = "2px solid green";
+    ninError.textContent = "";
+    }
+
 
     if(contact.value == ""){
         contact.style.border = "2px solid red";
@@ -170,13 +176,7 @@ const Validate=(event )=>{
     //     model.focus();
     //       error++;
     //  }
-    if(nin.value == ""){
-        nin.style.border = "2px solid red";
-        ninError.textContent = "Please enter NIN";
-        ninError.style = "color:red; font-family:serif ";
-        nin.focus();
-          error++;
-    }
+    
     
 
     //   // generating unique numbers

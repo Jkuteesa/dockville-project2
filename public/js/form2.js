@@ -8,10 +8,10 @@ const Validate=(event )=>{
     let contact = document.registration.contact
     let carModel = document.registration.carmodel
     let nplate = document.registration.nplate
-    let period = document.registration.period
     let date = document.registration.date
     let timeIn = document.registration.timein
     let timeOut = document.registration.timeout
+    let period = document.registration.period
 
    
 
@@ -25,7 +25,7 @@ const Validate=(event )=>{
     let dateError = document.getElementById("date-error")
     let timeInError = document.getElementById("timein-error")
     let timeOutError = document.getElementById("timeout-error")
-
+    
     
     
 
@@ -39,15 +39,16 @@ const Validate=(event )=>{
     let lastNameRegex2 = /^[A-Za-z]{2,}$/;
 
     // this regex is for contact
-    let contactRegex = /^\+256\d{9}$/;
-
+    // let contactRegex = /^\+256\d{9}$/;
+    let contactRegex = /^(?:\+256|256|0)(?:(7[0-8]|20|39|41|32|33)\d{7})$/
     // this is regex for nin
     let ninRegex = /^.{14}$/
-
+   
     // this is regex for number plate
     let nplateRegex = /^U.*/
-    let nplateRegex1 = /^[A-Za-z0-9]{1,7}$/
-    let nplateRegex2 = /^[A-Z]{1,7}$/
+    let nplateRegex1 = /^[\s\S]{0,7}$/
+
+    
 
 
 
@@ -119,24 +120,28 @@ const Validate=(event )=>{
         contact.focus();
     }
 
+    // Validating for NIN
+    // regex for nin
+    const ninRegex2 = /^CM([a-zA-Z0-9]{12})+$/
+
+
     if(nin.value == ""){
-        nin.style.border = "2px solid red";
-        ninError.textContent = "Please enter NIN";
-        ninError.style = "color:red; font-family:serif ";
-        nin.focus();
-        error++;
-    }else if(!nin.value.match(ninRegex)){
-        nin.style.border = "2px solid red";
-        ninError.textContent = "Nin should have atleast 14 characters.";
-        ninError.style = "color:red; font-family:serif ";
-        contact.focus();
-        error++;
-    }else{
-        nin.style.border = "2px solid green";
-        ninError.textContent = "";
-        
-        contact.focus();
-     }
+    nin.style.border = "2px solid red";
+    ninError.textContent = "Please enter NIN.";
+    ninError.style = "color: red; font-size:11px; font-family:helvetica,Arial,sans-serif;";
+    nin.focus();
+    error++;
+    }else if(!(ninRegex.test(nin.value)|| ninRegex2.test(nin.value))){
+    nin.style.border = "2px solid red";
+    ninError.textContent = "NIN should look like CFXXXXXXX or CMXXXXXXX";
+    ninError.style = "color:red; font-family:serif;";
+    nin.focus();
+    error++;
+    }
+    else{
+    nin.style.border = "2px solid green";
+    ninError.textContent = "";
+    }
 
     if(contact.value == ""){
         contact.style.border = "2px solid red";
@@ -155,7 +160,7 @@ const Validate=(event )=>{
             contact.style.border = "2px solid green";
             contactError.textContent = "";
             carModel.focus();
-        } 
+    } 
       
    if(carModel.value == ""){
     carModel.style.border = "2px solid red";
@@ -170,7 +175,7 @@ const Validate=(event )=>{
         nplate.focus();
     }
     
-
+    
     if(nplate.value == ""){
         nplate.style.border = "2px solid red";
         nplateError.textContent = "Please enter plate number";
@@ -183,7 +188,8 @@ const Validate=(event )=>{
         nplateError.style = "color:red; font-family:serif ";
         nplate.focus();
         error++
-    }else if(!!nplate.value.match(nplateRegex2)){
+        
+     }else if(!nplate.value.match(nplateRegex1)){
         nplate.style.border = "2px solid red";
         nplateError.textContent = "Number plate should not have more than 7 characters.";
         nplateError.style = "color:red; font-family:serif ";
@@ -217,6 +223,10 @@ const Validate=(event )=>{
         timeInError.style = "color:red; font-family:serif ";
         timeIn.focus();
           error++;
+    }else{
+        date.style.border = "2px solid green";
+        dateError.textContent = "";
+        timeOut.focus();
     }
 
    
