@@ -81,27 +81,27 @@ form .user__details .input__box {
   border-color: var(--main-purple);
 }
 
-/* inside the form gender details */
+/* inside the form services details */
 
-form .gender__details .gender__title {
+form .services__details .services__title {
   font-size: 20px;
   font-weight: 500;
 }
 
-form .gender__details .category {
+form .services__details .category {
   display: flex;
   width: 80%;
   margin: 15px 0;
   justify-content: space-between;
 }
 
-.gender__details .category label {
+.services__details .category label {
   display: flex;
   align-items: center;
 }
 
 
-.gender__details .category .checkbox ::before {
+.services__details .category .checkbox ::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -113,7 +113,7 @@ form .gender__details .category {
   opacity: 0;
   transition: opacity 0.3s ease;
   }
-  .gender__details .category input[type="checkbox"]:checked + .checkbox::before {
+  .services__details .category input[type="checkbox"]:checked + .checkbox::before {
     opacity: 1;}
 
 /* #dot-1:checked ~ .category .one,
@@ -123,7 +123,7 @@ form .gender__details .category {
   background: var(--main-purple);
 } */
 
- .gender__details .category  {
+ .services__details .category  {
   display: none;
 }  
  input[type="checkbox"]:checked + .checkbox {
@@ -166,7 +166,7 @@ form .button input:hover {
     width: 100%;
   }
 
-  form .gender__details .category {
+  form .services__details .category {
     width: 100%;
   }
 

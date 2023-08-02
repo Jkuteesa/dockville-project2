@@ -6,8 +6,8 @@ body{
     background-size: cover;
 }
 
-.button{
-    background-color: #A0D8B3;
+/* .button{
+    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
     color: black;
     border-radius: 4px;
     font-size: 16px;
@@ -16,5 +16,30 @@ body{
     cursor: pointer;
     border: solid;
     border-radius: 10%;
-   /* position: ; */
-}
+   /* position: ; 
+} */
+
+/* submit button */
+.button {
+    height: 45px;
+    margin: 45px 0;
+  }
+  
+  .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    transition: all 0.3s ease;
+  }
+  
+  
+  .button input:hover {
+    background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+  }
+  
