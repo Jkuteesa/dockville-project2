@@ -25,6 +25,7 @@ const Validate=(event )=>{
     let dateError = document.getElementById("date-error")
     let timeInError = document.getElementById("timein-error")
     let timeOutError = document.getElementById("timeout-error")
+    let periodError = document.getElementById("period-error")
     
     
     
@@ -226,17 +227,30 @@ const Validate=(event )=>{
     }else{
         date.style.border = "2px solid green";
         dateError.textContent = "";
+        period.focus();
+    }
+
+    if(period.value == ""){
+        period.style.border = "2px solid red";
+        periodError.textContent = "Please enter period";
+        periodError.style = "color:red; font-family:serif ";
+        period.focus();
+          error++;
+    }else{
+        date.style.border = "2px solid green";
+        dateError.textContent = "";
         timeOut.focus();
     }
 
-   
-       if(timeOut == ""){
+
+    
+    if(timeOut == ""){
         timeOut.style.border = "2px solid red";
         timeOutError.textContent = "Please enter time out";
         timeOutError.style = "color:red; font-family:serif ";
         timeOut.focus();
-              error++;
-       }
+                error++;
+        }
     
    
     

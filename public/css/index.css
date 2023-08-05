@@ -4,7 +4,9 @@ body{
     background-position: center;
     background-repeat: no repeat;
     background-size: cover;
+    /* background-color: plum; */
 }
+
 
 /* .button{
     background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
@@ -27,14 +29,16 @@ body{
   
   .button input {
     height: 100%;
-    width: 100%;
+    width: 50%;
+    margin-left: 20%;
     outline: none;
     color: #fff;
     border: none;
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
-    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    background-color: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+    background-color: blue;
     transition: all 0.3s ease;
   }
   
